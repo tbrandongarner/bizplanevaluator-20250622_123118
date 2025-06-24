@@ -1,8 +1,8 @@
 const Joi = require('joi')
-const { orchestrateAnalysis } = require('../services/openAiAnalysisOrchestrator')
-const { getMarketCompetitorData } = require('../services/marketCompetitorPipeline')
-const { runFinancialModels } = require('../services/runFinancialModels')
-const { ValidationError, ServiceError } = require('../errors')
+const { orchestrateAnalysis } = require('./openAiAnalysisOrchestrator')
+const { getMarketCompetitorData } = require('./marketCompetitorPipeline')
+const runFinancialModels = require('./runFinancialModels')
+const { ValidationError, ServiceError } = require('./errors')
 
 const financialInputsSchema = Joi.object({
   initialInvestment: Joi.number().min(0).required(),

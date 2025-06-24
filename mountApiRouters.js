@@ -1,8 +1,8 @@
 const express = require('express')
-const businessPlanRouter = require('../routes/businessPlanRoutes')
-const marketResearchRouter = require('../routes/marketResearchRoutes')
-const financialProjectionRouter = require('../routes/financialProjectionRoutes')
-const billingRouter = require('../routes/billingRoutes')
+const businessPlanRouter = require('./src/routes/business')
+const marketResearchRouter = require('./src/routes/market')
+const financialProjectionRouter = require('./src/routes/finance')
+const billingRouter = require('./src/routes/billing')
 
 module.exports = function mountApiRouters(app) {
   const apiRouter = express.Router()

@@ -9,13 +9,13 @@ const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 const path = require('path');
 
-const authRoutes = require(path.join(__dirname, 'src', 'routes', 'auth'));
-const businessRoutes = require(path.join(__dirname, 'src', 'routes', 'business'));
-const marketRoutes = require(path.join(__dirname, 'src', 'routes', 'market'));
-const financeRoutes = require(path.join(__dirname, 'src', 'routes', 'finance'));
-const generationRoutes = require(path.join(__dirname, 'src', 'routes', 'generation'));
-const reportRoutes = require(path.join(__dirname, 'src', 'routes', 'report'));
-const billingRoutes = require(path.join(__dirname, 'src', 'routes', 'billing'));
+const authRoutes = require('./src/routes/auth');
+const businessRoutes = require('./src/routes/business');
+const marketRoutes = require('./src/routes/market');
+const financeRoutes = require('./src/routes/finance');
+const generationRoutes = require('./src/routes/generation');
+const reportRoutes = require('./src/routes/report');
+const billingRoutes = require('./src/routes/billing');
 
 const app = express();
 

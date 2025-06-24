@@ -5,7 +5,7 @@ const PDFDocument = require('pdfkit');
 const Excel = require('exceljs');
 const { v4: uuidv4 } = require('uuid');
 
-const EXPORT_DIR = process.env.EXPORT_PATH || path.join(__dirname, '../public/exports');
+const EXPORT_DIR = process.env.EXPORT_PATH || path.join(__dirname, 'public/exports');
 const BASE_URL = (process.env.BASE_URL || '').replace(/\/+$/, '');
 
 function sanitizeFilename(input) {
