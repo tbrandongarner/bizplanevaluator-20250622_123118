@@ -1,6 +1,6 @@
 const Stripe = require('stripe');
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, { apiVersion: '2020-08-27' });
-const SubscriptionModel = require('../models/Subscription');
+const SubscriptionModel = require('./models/Subscription');
 
 async function createSubscription(userId, email, tierId) {
   if (!userId || !email || !tierId) {

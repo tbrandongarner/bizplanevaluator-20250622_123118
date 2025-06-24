@@ -1,7 +1,7 @@
 const axios = require('axios')
 const axiosRetry = require('axios-retry')
-const cache = require('../utils/cache')
-const { normalizeIndustryStats } = require('../utils/normalizer')
+const cache = require('./utils/cache')
+const { normalizeIndustryStats } = require('./utils/normalizer')
 
 const CACHE_TTL = 3600 // seconds
 const DEFAULT_TIMEOUT = 5000 // milliseconds
